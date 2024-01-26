@@ -20,7 +20,8 @@ export class ProductManager {
         // Agregamos el Id PARA TODO lo que recibimos por el parametro
 
         let  newProduct = {id , title, description, price, thumbnail, code , stock, status , category }
-this.products = await this.getProducts()
+        
+        this.products = await this.getProducts()
         this.products.push(newProduct)
 
         // Await para guardar producto en el archivo
@@ -34,7 +35,7 @@ this.products = await this.getProducts()
     //Obtener producto 
 
     getProducts = async () => {
-        const response = await fs.readFile(this.path, ' utf-8')
+        const response = await fs.readFile(this.path,'utf8')
         const responseJson = JSON.parse(response)
 
         return responseJson;

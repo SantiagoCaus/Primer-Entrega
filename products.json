@@ -1,5 +1,1 @@
-[
-                
-            
-        
-]
+[{"id":"5a2d2188-cca9-4a1c-aec2-7a92937e5934","title":"Producto de prueba 1","description":"Probando post con postman1","price":400,"thumbnail":"#","code":"mt1","stock":"11","status":"false","category":"prueba"},{"id":"a059907e-9339-4a84-94c4-c4a6127a9013","title":"Producto de prueba 2","description":"Probando post con postman1","price":400,"thumbnail":"#","code":"mt1","stock":"11","status":"false","category":"prueba"},{"id":"1effaf09-8d9a-4cab-a67c-3d834a6a93c3","title":"Producto de prueba 2","description":"Probando post con postman1","price":400,"thumbnail":"#","code":"mt1","stock":"11","status":"false","category":"prueba"}]
