@@ -68,7 +68,7 @@ productsRouter.put('/:pid' , async (req, res ) =>{
     }
 })
 
-productsRouter.delete('/', async (req,res)=>{
+productsRouter.delete('/:pid', async (req,res)=>{
     const {pid} = req.params;
     try{
         await productManager.deleteProduct(pid)

@@ -1,7 +1,5 @@
 import {promises as fs} from 'fs'
 
-// Uuid para id aleatorio
-
 import {v4 as uuidv4 } from 'uuid'
 
 export class ProductManager {
@@ -43,7 +41,7 @@ export class ProductManager {
     }
 
     getProductById = async (id)=> {
-        const response = this.getProducts()
+        const response = await this.getProducts()
 
         const product = response.find(product=> product.id == id)
         if(product){
@@ -74,9 +72,9 @@ return response[index]
 
     // Eliminar productos
 
-    deleteProduct = async (id)=> {
+    deleteProduct = async (id) => {
         const products = await this.getProducts()
-        const  index = response.findIndex(product => product.id == id) 
+        const  index = products.findIndex(product => product.id == id) 
 
         if( index != -1){
             products.splice(index, 1)
